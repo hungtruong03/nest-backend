@@ -9,6 +9,7 @@
     "routes": [
       {
         "src": "/(.*)",
+        "headers": { "Access-Control-Allow-Origin": "*" },
         "dest": "/dist/main.js",
         "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
       }
